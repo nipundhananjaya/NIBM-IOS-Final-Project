@@ -1,0 +1,6 @@
+framework module Pods_NIBM_Connect {
+  umbrella header "Pods-NIBM Connect-umbrella.h"
+
+  export *
+  module * { export * }
+}
