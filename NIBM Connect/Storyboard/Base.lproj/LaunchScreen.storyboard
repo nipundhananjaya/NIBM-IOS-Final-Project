@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NIBM Connect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXd-ON-UV4">
+                                <rect key="frame" x="106" y="421" width="203" height="54"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="National_Institute_of_Business_Management_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="MQp-W7-4sS">
+                                <rect key="frame" x="87" y="285" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.056770593225683452" green="0.74069529301467463" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MQp-W7-4sS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="241" id="2kJ-r8-3RQ"/>
+                            <constraint firstItem="bXd-ON-UV4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5Fx-B3-QA9"/>
+                            <constraint firstItem="MQp-W7-4sS" firstAttribute="centerX" secondItem="bXd-ON-UV4" secondAttribute="centerX" id="GXr-Aj-iBW"/>
+                            <constraint firstItem="MQp-W7-4sS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="HHO-ox-2oO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bXd-ON-UV4" secondAttribute="bottom" constant="387" id="J8B-qt-CYS"/>
+                            <constraint firstItem="bXd-ON-UV4" firstAttribute="top" secondItem="MQp-W7-4sS" secondAttribute="bottom" constant="8" symbolic="YES" id="LaL-Se-XBn"/>
+                            <constraint firstItem="MQp-W7-4sS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rx7-mp-MYY"/>
+                            <constraint firstItem="bXd-ON-UV4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="tZb-Xc-IWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="National_Institute_of_Business_Management_Logo" width="150" height="86"/>
+    </resources>
+</document>
