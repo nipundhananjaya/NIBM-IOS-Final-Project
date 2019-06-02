@@ -20,6 +20,7 @@
 		7BD51685229A980600DEDB9B /* friendsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD51684229A980600DEDB9B /* friendsInfoViewController.swift */; };
 		7BD51688229A99EB00DEDB9B /* FriendInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD51687229A99EB00DEDB9B /* FriendInfoModel.swift */; };
 		7BD5168A229AA40600DEDB9B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD51689229AA40600DEDB9B /* TabBarViewController.swift */; };
+		7BEFC79422A2C82800EF6AB3 /* FriendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFC79322A2C82800EF6AB3 /* FriendsDetailViewController.swift */; };
 		B61B78E3DCBFCCF00BDFFF4F /* Pods_NIBM_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B95DBA9FE60D3C537587796 /* Pods_NIBM_Connect.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		7BD51684229A980600DEDB9B /* friendsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendsInfoViewController.swift; sourceTree = "<group>"; };
 		7BD51687229A99EB00DEDB9B /* FriendInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInfoModel.swift; sourceTree = "<group>"; };
 		7BD51689229AA40600DEDB9B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7BEFC79322A2C82800EF6AB3 /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailViewController.swift; sourceTree = "<group>"; };
 		9B289E56C141FC83518F43D0 /* Pods-NIBM Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM Connect.release.xcconfig"; path = "Target Support Files/Pods-NIBM Connect/Pods-NIBM Connect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				7BD51682229A96D000DEDB9B /* uniFriendsTableViewCell.swift */,
 				7BD51684229A980600DEDB9B /* friendsInfoViewController.swift */,
 				7BD51689229AA40600DEDB9B /* TabBarViewController.swift */,
+				7BEFC79322A2C82800EF6AB3 /* FriendsDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				7BD51666229A67D300DEDB9B /* AppDelegate.swift in Sources */,
 				7BD51683229A96D000DEDB9B /* uniFriendsTableViewCell.swift in Sources */,
 				7BD5167F229A848A00DEDB9B /* ResetPasswordViewController.swift in Sources */,
+				7BEFC79422A2C82800EF6AB3 /* FriendsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
