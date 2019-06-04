@@ -1,10 +1,4 @@
-//
-//  MyHomeworkViewController.swift
-//  NIBM Connect
-//
-//  Created by Tharindu Randunu on 6/4/19.
-//  Copyright © 2019 NIBM. All rights reserved.
-//
+
 
 import UIKit
 

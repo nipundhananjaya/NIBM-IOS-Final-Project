@@ -16,13 +16,9 @@ class signInViewController: UIViewController {
         
     }
     
-//Sign in button Click event
-    
     @IBAction func signInUser(_ sender: UIButton) {
     
-        //self.loadingView.alpha = CGFloat(1.0)
         if (email.text?.isEmpty)!{
-            //self.loadingView.alpha = CGFloat(0.0)
             let alert = UIAlertController(title: "Error", message:"Please Enter Valid Email!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             self.present(alert, animated: true)
@@ -30,7 +26,6 @@ class signInViewController: UIViewController {
             return
         }
         else if (password.text?.isEmpty)!{
-            //self.loadingView.alpha = CGFloat(0.0)
             let alert = UIAlertController(title: "Error", message:"Please Enter Valid Password!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             self.present(alert, animated: true)
@@ -43,7 +38,6 @@ class signInViewController: UIViewController {
                 if error != nil {
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                    //self?.loadingView.alpha = CGFloat(0.0)
                     strongSelf.present(alert, animated: true, completion: nil)
                 } else {
                     strongSelf.dismiss(animated: true, completion: nil)
@@ -51,20 +45,15 @@ class signInViewController: UIViewController {
                     print("logged in")
                     print(user?.user.uid)
                     
-                    
-                    //End
-                    
-                    //Open next UI
-                    //strongSelf.loadingView.alpha = CGFloat(0.0)
                     let storyboard = UIStoryboard(name: "Home", bundle: nil)
                     let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! TabBarViewController
                     strongSelf.present(controller, animated: true, completion: nil)
-                    //End
+                    
                 }
             }
         }
     }
-//End of the Sign in button event
+
 }
 
 var vSpinner : UIView?

@@ -1,10 +1,4 @@
-//
-//  ResetPasswordViewController.swift
-//  NIBM Connect
-//
-//  Created by Tharindu Randunu on 5/26/19.
-//  Copyright © 2019 NIBM. All rights reserved.
-//
+
 
 import UIKit
 import Firebase
@@ -20,17 +14,15 @@ class ResetPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     
   
     @IBAction func ResetPassword(_ sender: UIButton) {
         
-//        self.loadingView.alpha = CGFloat(1.0)
         
         if (email.text?.isEmpty)!{
-//            self.loadingView.alpha = CGFloat(0.0)
             let alert = UIAlertController(title: "Error", message:"Enter Email!", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alert.addAction(action)
@@ -38,7 +30,6 @@ class ResetPasswordViewController: UIViewController {
             return
         }
         else if (currentUser?.email != email.text){
-//            self.loadingView.alpha = CGFloat(0.0)
             let alert = UIAlertController(title: "Error", message:"Enter Valid Email!", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alert.addAction(action)
@@ -46,7 +37,6 @@ class ResetPasswordViewController: UIViewController {
             return
         }
         else{
-            //reset password
             let resetEmail = self.email.text!
             Auth.auth().sendPasswordReset(withEmail: resetEmail, completion: { (error) in
                 //Make sure you execute the following code on the main queue
@@ -60,7 +50,6 @@ class ResetPasswordViewController: UIViewController {
                         self.present(alert, animated: true)
                         return
                     } else {
-//                        self.loadingView.alpha = CGFloat(0.0)
                         let alert = UIAlertController(title: "Success", message:"Password Reset Success!", preferredStyle: .alert)
                         let action = UIAlertAction(title: "Ok", style: .cancel, handler: {action in self.passwordRestDone()})
                         alert.addAction(action)
@@ -73,7 +62,6 @@ class ResetPasswordViewController: UIViewController {
     }
     
     
-    //Password reset Ok Handler function
     func passwordRestDone(){
         print("Clicked")
         self.navigationController?.popViewController(animated: true)
