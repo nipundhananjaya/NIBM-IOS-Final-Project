@@ -13,14 +13,26 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var tabBarController : UITabBarController?
+    var homeVC = friendsInfoViewController()
+    var homeWorkVC = MyHomeworkViewController()
+    var MyProfileView = MyProfileViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
-        // Override point for customization after application launch.
+//        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        //IQKeyboardManager.sharedManager().enable = true
+        tabBarController?.setViewControllers([homeVC,homeWorkVC,MyProfileView], animated: true)
+        tabBarController?.selectedIndex = 0
         return true
     }
+    
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+//        let handled = GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
+        return true
+    }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

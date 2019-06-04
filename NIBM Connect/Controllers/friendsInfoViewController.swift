@@ -32,6 +32,17 @@ class friendsInfoViewController: UIViewController, UITableViewDataSource, UITabl
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showFriendDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? FriendsDetailViewController{
+            destination.selectedFriend = self.friendInfoList[(friendsTableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
     
     //Load data from firebase
     func loadFriendsData(){
